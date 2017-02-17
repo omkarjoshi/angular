@@ -1,14 +1,61 @@
-<!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>WalletApp</title>
-  <base href="/">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>Demo Project Of Angluar 2 JS</title>
+<!--Meta Tags for SEO Start Here-->
+<meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<base href="/">
+<meta name="viewport" content="width=device-width,initial-scale=1"><!--Use For Resposnive-->
+<!--Meta Tags for SEO End Here-->
+<link rel="stylesheet" href="./css/bootstrap.min.css"><!--Boostrap CSS-->
+<link rel="stylesheet" href="css/style.css"><!--Custom Css-->
+<link rel="stylesheet" href="css/easy-responsive-tabs.css"><!-- Reponsive CSS Tabs Use for Mega  Navbar Menu-->
+<!-- Owl Stylesheets -->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<!-- Owl Stylesheets -->
+<script src="js/jquery-3.1.1.min.js"></script><!--Jquery Js-->
+<script src="js/bootstrap.min.js"></script><!--Boostrap JS-->
+<script src="js/easy-responsive-tabs.js"></script><!-- Reponsive JS Tabs Use for Mega  Navbar Menu-->
+<script src="js/owl.carousel.js"></script>
 </head>
 <body>
   <wa-root>Loading...</wa-root>
 </body>
+<script>
+	
+	<!--Jquery Code for Hide & Show -->
+	$("#click-icon").click(function(){
+    $(".mega-menu").removeClass('hide')
+    $(".mega-menu").toggle()
+	});
+	<!--Jquery Code for Hide & Show end here -->
+	
+	<!-- Easy Responsive tabe Mega Menu Script-->
+	$(document).ready(function () {
+	$('#horizontalTab').easyResponsiveTabs({
+	type: 'default', //Types: default, vertical, accordion           
+	width: 'auto', //auto or any width like 600px
+	fit: true,   // 100% fit in a container
+	closed: 'accordion', // Start closed if in accordion view
+	activate: function(event) { // Callback function if tab is switched
+	var $tab = $(this);
+	var $info = $('#tabInfo');
+	var $name = $('span', $info);
+	$name.text($tab.text());
+	$info.show();
+	}
+	});
+	$('#verticalTab').easyResponsiveTabs({
+	type: 'vertical',
+	width: 'auto',
+	fit: true
+	});
+	});
+	<!-- Easy Responsive tabe Mega Menu Script end here-->
+
+	</script>
 </html>
+
+

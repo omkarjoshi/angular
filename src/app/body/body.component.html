@@ -1,0 +1,91 @@
+<!-- Wallet Section Start Here-->
+	<section class="wallet-block">
+		<div class="container">
+			<div class="row no_padding no _margin">
+				<p class="service-box-heading">Home / wallet</p>
+					<div class="wallet-inside-box">
+						<div class="row no_margin no_padding wallet-padding">
+							<div class="col-sm-2 col-md-2 col-xs-6">
+								<p class="wallet-balance-heading">Rs</p><span class="wallet-amount"> 0</span>
+								<p class="wallet-below-heading">Your Wallet Balance</p>
+							</div>
+							<div class="col-sm-4 col-md-4 col-xs-6 wallet-margin-top mobile-top-hide">
+								<input type="text" name="enter amount" class="input-amount-box" [(ngModel)]='transaction.transactionAmount' placeholder="Enter Amount to be Added">
+							</div>
+							<div class="col-sm-2 col-md-2 col-xs-6 wallet-margin-top mobile-top-hide">
+								<a href="#" class="promo-code-link">Have a Promo Code</a>
+							</div>
+							
+							<div class="col-sm-4 col-md-4 col-xs-12 wallet-margin-top mobile-top-hide">
+								<a class="add-money-button" href="#" (click)='addToWallet()'>Add Money to Wallet</a>
+                <ul>
+                    <li *ngFor="let item of items">{{item.categoryId}}</li>
+                </ul>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Wallet Section End Here-->
+	
+	<section class="service-box">
+		<div class="container">
+			<div class="row no_margin no_padding">
+				<p class="service-box-heading">Services Provided By Us</p>
+					<div class="service-icon-block">
+						<div class="row no_margin no_padding padding30px">
+							<div class="col-sm-1 col-md-1 col-xs-1">
+								<img src="images/movie-icon.png"class="img-responsive cust-img-width-icon mbpading">
+								<figcaption class="icon-heading">Movies</figcaption>
+							</div>
+							<div class="col-sm-1 col-md-1 col-xs-1">
+								<img src="images/drama.png"class="img-responsive cust-img-width-icon mbpading">
+								<figcaption class="icon-heading">Drama</figcaption>
+							</div>
+							<div class="col-sm-1 col-md-1 col-xs-1">
+								<img src="images/bus.png"class="img-responsive cust-img-width-icon mbpading">
+								<figcaption class="icon-heading">Bus</figcaption>
+							</div>
+							<div class="col-sm-1 col-md-1 col-xs-1">
+								<img src="images/train.png"class="img-responsive cust-img-width-icon mbpading">
+								<figcaption class="icon-heading">Trains</figcaption>
+							</div>
+							<div class="col-sm-1 col-md-1 col-xs-1">
+								<img src="images/flights.png"class="img-responsive cust-img-width-icon mbpading">
+								<figcaption class="icon-heading">Flights</figcaption>
+							</div>
+							<div class="col-sm-1 col-md-1 col-xs-1">
+								<img src="images/events.png"class="img-responsive cust-img-width-icon mbpading">
+								<figcaption class="icon-heading">Events</figcaption>
+							</div>
+							<div class="col-sm-1 col-md-1 col-xs-1">
+								<img src="images/parks.png"class="img-responsive cust-img-width-icon mbpading">
+								<figcaption class="icon-heading">Parks</figcaption>
+							</div>
+							<div class="col-sm-1 col-md-1 col-xs-1">
+								<img src="images/hotel.png"class="img-responsive cust-img-width-icon mbpading">
+								<figcaption class="icon-heading">Hotels</figcaption>
+							</div>
+							<div class="col-sm-1 col-md-1 col-xs-1">
+								<img src="images/gift.png"class="img-responsive cust-img-width-icon mbpading">
+								<figcaption class="icon-heading">Digital Gift</figcaption>
+							</div>
+							<div class="col-sm-1 col-md-1 col-xs-1">
+								<img src="images/car.png"class="img-responsive cust-img-width-icon mbpading">
+								<figcaption class="icon-heading">Car</figcaption>
+							</div>
+							<div class="col-sm-1 col-md-1 col-xs-1">
+								<img src="images/deals.png"class="img-responsive cust-img-width-icon mbpading">
+								<figcaption class="icon-heading">Deals</figcaption>
+							</div>
+							<div class="col-sm-1 col-md-1 col-xs-1">
+								<img src="images/bikes.png"class="img-responsive cust-img-width-icon mbpading">
+								<figcaption class="icon-heading">Bikes</figcaption>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
